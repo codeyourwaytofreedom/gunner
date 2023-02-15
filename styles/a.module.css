@@ -17,27 +17,36 @@
   width: 80vw;
   bottom: 0;
   color: white !important;
-  border: 2px solid white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.details_membership_double {
+  display: grid;
+  justify-content: center;
 }
 .details_membership_title {
   display: grid;
   justify-content: center;
   font-size: 21px;
+  padding-bottom: 10px;
 }
 .details_membership_line {
-  border: 2px solid yellow;
-  padding: 0 3vw;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .details_membership_line_box {
-  border: 2px solid white;
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 5px;
+  padding: 3px 5px;
   color: yellow;
+  margin-bottom: 2px;
+}
+.details_membership_line_option {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=a.module.css.map */

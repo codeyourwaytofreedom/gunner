@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import a from "../styles/a.module.css";
 import Light from "./light.js";
 import Box from "./box.js";
-
+import Package from "./package.js";
 const Spotlight = () => {
     return ( 
     <>
@@ -32,25 +32,21 @@ const Spotlight = () => {
                     </Canvas> 
 
                     <div className={a.details}>
-                       <div className={a.details_membership}>
-                            <div className={a.details_membership_title}>
-                                SILVER PACKAGE
-                            </div>
-                            <div className={a.details_membership_line}>
-                                <span className={a.details_membership_line_box}>&#10003;</span>
-                            </div>
-                            <div>Two</div>
-                       </div>
-                       <div className={a.details_membership}>
-                            <div className={a.details_membership_title}>
-                                GOLD PACKAGE
-                            </div>
-                       </div>
-                       <div className={a.details_membership}>
-                            <div className={a.details_membership_title}>
-                                DIAMOND PACKAGE
-                            </div>
-                       </div>
+                        <Package 
+                            title={"SILVER PACKAGE"}
+                            services = {["1 supported device", "Unlimited movies", "Ad-free TV shows", "Watch in HD"]}
+                            clr={"silver"}
+                        />  
+                        <Package 
+                            title={"GOLD PACKAGE"}
+                            services = {["2 supported devices", "Unlimited movies", "Ad-free TV shows", "Watch in Full HD"]}
+                            clr={"gold"}
+                        /> 
+                        <Package 
+                            title={"DIAMOND PACKAGE"}
+                            services = {["4 supported devices", "Unlimited movies", "Ad-free TV shows", "Watch in Ultra HD"]}
+                            clr={"magenta"}
+                        /> 
                     </div> 
                 </div>
                 
