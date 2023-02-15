@@ -14,8 +14,8 @@ const Package = ({title, services,clr}) => {
 
                                 
                                 {
-                                    services.map (s =>
-                                    <div className={a.details_membership_line}>
+                                    services.map ((s,i) =>
+                                    <div className={a.details_membership_line} key={i}>
                                         <span style={{color:clr}} className={a.details_membership_line_box}>&#10003;</span>
                                         <span style={{color:clr}} className={a.details_membership_line_option}>{s}</span>
                                     </div>
