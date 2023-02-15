@@ -2,12 +2,12 @@
 import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
-import Bullet from "../components/bullet.js";
+import Spotlight from "../components/membership.js";
 
 export default function Home() {
   return (
     <>
-          <Bullet/>
+          <Spotlight/>
     </>
   )
 }

@@ -15,7 +15,7 @@ const Box = () => {
             smoothness={4} // The number of curve segments. Default is 4
             position={[0,0,0]}
             ref={box}
-            rotation={[0.2,0,0]}
+            rotation={[0.4,0,0]}
         >
             <meshPhongMaterial color="#f3f3f3" wireframe />
         </RoundedBox>

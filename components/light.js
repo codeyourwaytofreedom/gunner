@@ -15,7 +15,6 @@ const Light = ({clr,pos }) => {
     return ( 
         <>
         <SpotLight position={pos} ref={light} color={clr} castShadowpenumbra={1} distance={6} angle={0.35} attenuation={5} anglePower={4} intensity={4}/>
-
         </>
       );
 }
